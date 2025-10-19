@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Vision AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'dark-bg': '#0D1117',
+              'dark-card': 'rgba(22, 27, 34, 0.6)',
+              'dark-border': 'rgba(48, 54, 61, 0.8)',
+              'light-bg': '#F3F4F6',
+              'light-card': 'rgba(255, 255, 255, 0.6)',
+              'light-border': 'rgba(209, 213, 219, 0.8)',
+              'neon-green': '#39FF14',
+              'neon-red': '#FF3131',
+              'neon-blue': '#00BFFF',
+            },
+            boxShadow: {
+              'neon-green': '0 0 5px #39FF14, 0 0 10px #39FF14',
+              'neon-red': '0 0 5px #FF3131, 0 0 10px #FF3131',
+              'neon-blue': '0 0 5px #00BFFF, 0 0 10px #00BFFF',
+            },
+            backdropBlur: {
+              xl: '20px',
+            },
+          },
+        },
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "recharts": "https://aistudiocdn.com/recharts@^3.3.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.546.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.25.0"
+  }
+}
+</script>
+</head>
+<body class="bg-light-bg dark:bg-dark-bg transition-colors duration-500">
+    <div id="root"></div>
+</body>
+</html>
